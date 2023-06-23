@@ -7,9 +7,8 @@
 # Including:                                        
 #  1. environment variable                          
 #  2. source other config                           
-#  3. alias                                         
-#  4. function                                      
-#  5. shell initialization                      
+#  3. alias                                                                             
+#  4. shell initialization                      
 #---------------------------------------------------# 
 
 #--- 1. environment variable ---#
@@ -41,10 +40,7 @@ alias gc 'gvim ~/.cshrc'
 alias vv 'gvim ~/.vimrc'
 alias sc 'source ~/.cshrc'
 
-#--- 4. function ---#
-function mkd {
-  mkdir -p $1 && cd $1
-}
+alias mkd "mkdir -p \!:1 ; cd \!:1"
 
 #--- 5. shell initialization ---#
 set prompt="[`date '+%H:%M'`] @%m: %~ > "
