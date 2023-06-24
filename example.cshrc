@@ -43,7 +43,7 @@ alias sc 'source ~/.cshrc'
 alias mkd "mkdir -p \!:1 ; cd \!:1"
 
 #--- 4. shell initialization ---#
-set prompt="[`date '+%H:%M'`] @%m: %~ > "
+set prompt="`date '+%H:%M'`[@%m]: %~ / "
 set history=1000
 set autolist
 set complete=enhance
